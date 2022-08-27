@@ -3,4 +3,45 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 79px 0 147px;
+}
+
+.Landing__main{
+    margin: 85px 0 123px;
+}
+
+.Landing__btns{
+    display: flex;
+    flex-direction: column;
+}
+
+.Landing__btn{
+    padding: 18px 82px;
+    border-radius: 8px;
+    background: #62A1EB;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: none;
+    font-family: HelveticaNeue;
+    cursor: pointer;
+}
+
+.Landing__btn:hover{
+    background-color: #317AD0;
+}
+
+.Landing__btn:focus{
+    background-color: #1A5DAB;
+}
+
+.Landing__btn--margin{
+    margin-top: 26px;
+}
+
+@media(max-width: 391px){
+    .Landing__main{
+        margin: 100px 0 123px;
+    }
 }
