@@ -1,10 +1,12 @@
-import Landing from "./pages/Landing.jsx"
+// import Landing from "./pages/landing/Landing.jsx"
+import Workmate from "./pages/workmate/Workmate.jsx";
 import './app.css'
 
 function App() {
   return (
     <div className="App">
-      <Landing />
+      {/* <Landing /> */}
+      <Workmate />
     </div>
   );
 }

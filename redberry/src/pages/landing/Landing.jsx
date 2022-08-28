@@ -1,8 +1,8 @@
 import './landing.css'
-import '../fonts/font.css'
-import redberryLogo from '../images/logo-redberry.png'
-import landingMainImg from'../images/landing-main-img.png'
-import landingMainMobile from '../images/landing-main-mobile.png'
+import '../../fonts/font.css'
+import redberryLogo from '../../images/landing/logo-redberry.png'
+import landingMainImg from'../../images/landing/landing-main-img.png'
+import landingMainMobile from '../../images/landing/landing-main-mobile.png'
 import React from 'react'
 
 export default function Landing() {
