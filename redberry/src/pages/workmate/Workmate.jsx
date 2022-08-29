@@ -51,7 +51,7 @@ export default function Workmate() {
                     <br/>
                     <input
                         id="firstName"
-                        className='p-19 border'
+                        className='p-19 border focus'
                         type="text"
                         placeholder="გრიშა"
                         onChange={handleChange}
@@ -65,7 +65,7 @@ export default function Workmate() {
                     <br/>
                     <input
                         id="lastName"
-                        className='p-19 border'
+                        className='p-19 border focus'
                         type="text"
                         placeholder="ბაგრატიონი"
                         onChange={handleChange}
@@ -115,7 +115,7 @@ export default function Workmate() {
             <label htmlFor='email'>მეილი</label>
                     <br/>
                 <input
-                   className=" p-19 border"
+                   className=" p-19 border focus"
                     id="email"
                     type="email"
                     placeholder="Email"
@@ -130,7 +130,7 @@ export default function Workmate() {
                 <br/>
                 <input
                     id="call"
-                    className=" p-19 border"
+                    className=" p-19 border focus"
                     type="text"
                     placeholder="+995 598 00 07 01"
                     onChange={handleChange}
