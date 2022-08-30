@@ -4,6 +4,7 @@ import arrowDown from '../../images/workmate/arrow-down.png'
 import logo from '../../images/workmate/logo.png'
 import '../../fonts/font.css'
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 
 export default function Workmate() {
@@ -35,9 +36,9 @@ export default function Workmate() {
     <div className='Wbody'>
     <div className='Workmate'>
         <div className='Workmate__top'>
-            <a className="Workmate__top--arrow" href="#">
-            <img src={arrowLeft} alt="left arrow"/>
-            </a>
+            <Link to="/"className="Workmate__top--arrow" >
+                <img src={arrowLeft} alt="left arrow"/>
+            </Link>
             <div className='Workmate__top--texts'>
                 <span className='Workmate__top--text underline'>თანამშრომლის ინფო</span>
                 <span className='Workmate__top--text none-mobile'>ლეპტოპის მახასიათებლები</span>
@@ -78,7 +79,7 @@ export default function Workmate() {
             <div className='Workmate__select--r2 w-100 m-37'>
                 <select 
                     id="team" 
-                    className='p-19'
+                    className='Workmate__select p-19'
                     value={formData.team}
                     onChange={handleChange}
                     name="team"
@@ -96,7 +97,7 @@ export default function Workmate() {
             <div className='Workmate__select--r3 w-100 m-37'>
                 <select 
                     id="position" 
-                    className="p-19"
+                    className="Workmate__select p-19"
                     value={formData.position}
                     onChange={handleChange}
                     name="position"
@@ -140,7 +141,9 @@ export default function Workmate() {
                  <span className="Workmate__desc">უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</span>
             </div>
             <div className='Workmate__next'>
-                <input className="Workmate__btn" type="button"  value={"შემდეგი"}/>
+                <Link to='../computer'>
+                    <input className="Workmate__btn" type="button"  value={"შემდეგი"}/>
+                </Link>
             </div>
         </form>
         <div className='Workmate__bottom none-mobile'>
