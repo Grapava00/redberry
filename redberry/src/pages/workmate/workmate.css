@@ -3,10 +3,13 @@
 .w-100{
     width: 100%;
 }
+
 .p-19{
     padding: 19px 0;
     font-family: HelveticaNeue;
+    font-size: 18px;
 }
+
 
 .m-37{
     margin-top: 40px;
@@ -17,7 +20,6 @@
     border-radius: 10px;
     border: 1.8px solid #8AC0E2;
     margin-top: 8px;
-    width: 100%;
 }
 
 .Workmate__desc{
@@ -44,6 +46,21 @@
     background-color: rgba(43, 75, 242, 0.06);
 }
 
+select{
+    -moz-appearane:none;
+    -webkit-appearance: none;
+}
+select:focus{
+    outline:none
+}
+select ::-ms-expand{
+    display: none;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
 /* end global styles */
 
 
@@ -55,7 +72,7 @@
 
 .Workmate{
     max-width: 1226px; 
-      width: 100%;  
+     width: 100%;  
      margin: 0 auto; 
     display: flex;
     flex-direction: column;
@@ -98,7 +115,7 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-     margin: 20px 0 47px;
+    margin: 20px 0 47px;
     padding: 80px 110px 30px; 
     background-color: white;
 }
@@ -127,19 +144,15 @@ label{
 }
 
 .Workmate__select{
-    -moz-appearane:none;
-    -webkit-appearance: none;
     width: 100%;
     text-indent: 16px;
     width: 100%;
     border-radius: 10px;
     background-color: #EBEBEB;
     border: none;
+    font-weight: bold;
 }
 
-select ::-ms-expand{
-    display: none;
-}
 
 .Workmate__arrow--down{
     position: absolute;
@@ -147,13 +160,10 @@ select ::-ms-expand{
     right: 15px;
 }
 
-select option{
+.Workmate__select option{
     background-color: white;
 }
 
-select:focus{
-    outline:none
-}
 
 .Workmate__next{
     margin: 40px 0 20px;
@@ -172,7 +182,7 @@ select:focus{
     border-radius: 8px;
 }
 
-.Workmate__bottom{
+.Workmate__button{
     margin-bottom: 20px;
 }
 

@@ -116,7 +116,7 @@ export default function Workmate() {
             <label htmlFor='email'>მეილი</label>
                     <br/>
                 <input
-                   className=" p-19 border focus"
+                   className=" p-19 border focus w-100"
                     id="email"
                     type="email"
                     placeholder="Email"
@@ -131,7 +131,7 @@ export default function Workmate() {
                 <br/>
                 <input
                     id="call"
-                    className=" p-19 border focus"
+                    className=" p-19 border focus w-100"
                     type="text"
                     placeholder="+995 598 00 07 01"
                     onChange={handleChange}
@@ -146,7 +146,7 @@ export default function Workmate() {
                 </Link>
             </div>
         </form>
-        <div className='Workmate__bottom none-mobile'>
+        <div className='Workmate__button none-mobile'>
             <img src={logo} alt="logo" />
         </div>
     </div>
